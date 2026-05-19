@@ -1,0 +1,30 @@
+.form-label {
+  color: var(--text-label);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.invalid-feedback {
+  color: var(--error);
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+/* Radio Buttons */
+.form-check-input {
+  background-color: var(--bg-input);
+  border-color: var(--border-color);
+}
+
+.form-check-input:checked {
+  background-color: var(--action-primary);
+  border-color: var(--border-focus);
+}
+
+.form-check-label {
+  color: var(--text-primary);
+  opacity: 0.9;
+}

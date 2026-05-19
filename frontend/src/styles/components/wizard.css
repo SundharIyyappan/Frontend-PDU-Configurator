@@ -1,0 +1,9 @@
+/* Custom Card Container */
+.wizard-container {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+  /* no top margin if we want it to flow naturally below header, or just minimal */
+}

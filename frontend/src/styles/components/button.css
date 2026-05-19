@@ -1,0 +1,51 @@
+/* Form Action Buttons */
+.wizard-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.btn-wizard-primary {
+  background: linear-gradient(180deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 2rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-wizard-primary:hover:not(:disabled) {
+  background: linear-gradient(180deg, #60a5fa 0%, #3b82f6 100%);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.4);
+  color: white;
+}
+
+.btn-wizard-primary:disabled {
+  background: #2a3b52;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+.btn-wizard-secondary {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--action-secondary-border);
+  border-radius: 6px;
+  padding: 0.6rem 2rem;
+  transition: all 0.2s;
+}
+
+.btn-wizard-secondary:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: var(--text-muted);
+}
+
+.btn-wizard-secondary:disabled {
+  border-color: var(--action-secondary-border);
+  color: #4A5568;
+  cursor: not-allowed;
+  opacity: 0.6;
+}

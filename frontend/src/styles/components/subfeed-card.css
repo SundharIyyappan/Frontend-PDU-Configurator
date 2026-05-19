@@ -1,0 +1,119 @@
+.subfeed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.subfeed-card {
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-card);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.subfeed-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.subfeed-card-header {
+  background-color: var(--bg-header);
+  color: var(--text-primary);
+  text-align: left;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 1px solid var(--border-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.subfeed-quantity-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-input);
+  color: var(--text-primary);
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.subfeed-quantity-row span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.subfeed-image-container {
+  background-color: rgba(255, 255, 255, 0.02);
+  /* Very subtle contrast for image */
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  min-height: 140px;
+}
+
+.subfeed-image-container img {
+  max-width: 100px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+.subfeed-feature-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.9rem;
+}
+
+.subfeed-feature-row:last-child {
+  border-bottom: none;
+  flex-grow: 1;
+}
+
+.subfeed-feature-row span {
+  color: var(--text-muted);
+}
+
+/* Empty spacer to keep cards identical height */
+.subfeed-spacer {
+  background-color: var(--bg-card);
+  flex-grow: 1;
+  min-height: 48px;
+}
+
+/* Limit height of quantity dropdown and enable scroll */
+.subfeed-qty-select {
+  max-height: 150px !important;
+  overflow-y: auto !important;
+}
+
+/* Note: For native select elements, max-height/overflow-y styling is 
+   limited by browser behavior. This class is prepared for future custom 
+   dropdown implementation or specific browser support. */
+
+/* Error alert used in wizard steps */
+.subfeed-error-alert {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(239, 68, 68, 0.15);
+  border: 1px solid #ef4444;
+  color: #f87171;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}

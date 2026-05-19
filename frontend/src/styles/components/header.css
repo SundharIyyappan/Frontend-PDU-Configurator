@@ -1,0 +1,31 @@
+/* Header Specific Component Styling */
+.app-header {
+  background-color: var(--bg-header);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.app-header .logo {
+  font-weight: 900;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hyper-logo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+.app-header .title {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}
+.app-header .subtitle {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}

@@ -1,0 +1,36 @@
+:root {
+  /* Updated Background Hierarchy */
+  --bg-main: #0f1b2d;
+  --bg-header: #0d1726;
+  --bg-card: #162334;
+  --bg-input: #1b2a3f;
+
+  /* Borders and Contrast */
+  --border-color: #2a3b52;
+  --border-focus: #3b82f6;
+
+  /* Typography */
+  --text-primary: #ffffff;
+  --text-muted: #cbd5e1;
+  --text-label: #94a3b8;
+
+  /* Actions */
+  --action-primary: #3b82f6;
+  /* default blue */
+  --action-primary-hover: #60a5fa;
+  /* brighter hover */
+  --action-secondary-border: #475569;
+
+  /* Theme Aliases */
+  --color-accent: var(--action-primary);
+  --color-muted: var(--text-muted);
+  --color-bg-input: var(--bg-input);
+  --color-bg-card: var(--bg-card);
+  --color-bg-header: var(--bg-header);
+  --color-border: var(--border-color);
+  --color-text-primary: var(--text-primary);
+
+  /* Feedback */
+  --error: #f87171;
+  /* softened red */
+}

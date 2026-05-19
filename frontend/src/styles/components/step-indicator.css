@@ -1,0 +1,27 @@
+.step-indicator-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.step-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.step-dot.active {
+  background-color: var(--action-primary);
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
+}
+
+.step-dot.completed {
+  background-color: var(--action-primary);
+  opacity: 0.5;
+}
+
+.step-dot.upcoming {
+  background-color: transparent;
+  border: 2px solid var(--border-color);
+}
